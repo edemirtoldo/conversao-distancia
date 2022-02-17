@@ -1,9 +1,6 @@
-# conversao-distancia
-
-# conversao-distancia
 # Kubedev - Desafio Docker - Questão 03
 
-## Aplicação escrita em NodeJS
+## Aplicação escrita em Python utilizando Flask
 
 Dockerfile
 ```bash
