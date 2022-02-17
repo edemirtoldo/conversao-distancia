@@ -11,12 +11,13 @@ RUN pip3 install -r requirements.txt
 COPY . .
 CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
 ```
- 
+
 Processo de construção da imagem com Dockerfile
 
 ```bash
 docker build -t edemirtoldo/conversao-distancia:v1 .
 ```
+
 Enviar a imagem v1 para o Docker Hub.
 
 ```bash
@@ -38,7 +39,7 @@ docker push edemirtoldo/conversao-distancia:latest
 Executar a aplicação Python com Flask em container.
 
 ```bash
-docker container run -d -p 8080:8080 --name conversao-distancia  edemirtoldo/conversao-distancia:v1
+docker container run -d -p 5000:5000 --name conversao-distancia  edemirtoldo/conversao-distancia:v1
 ```
 
 Link de acesso a aplicação de conversão de distancia <http://localhost:8080/>
